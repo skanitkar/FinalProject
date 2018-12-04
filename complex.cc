@@ -33,12 +33,10 @@ Complex Complex::mag() const {
 // tan^-1(b/a) in degrees
 Complex Complex::angle() const {
     return Complex(atan2(imag,real) * 360/(2*PI));
-
 }
 
 Complex Complex::conj() const {
     return Complex(real, -imag);
-
 }
 
 std::ostream& operator<< (std::ostream& os, const Complex& rhs) {
